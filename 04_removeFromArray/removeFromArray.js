@@ -1,4 +1,10 @@
-const removeFromArray = function() {
+const removeFromArray = function (arrayToModify, ...valuesToRemove) {
+    // splice func
+
+};
+
+function numberInArray(num) {
+    // idk
 };
 
 // Do not edit below this line
