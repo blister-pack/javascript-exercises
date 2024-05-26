@@ -1,14 +1,14 @@
 
 const repeatString = function (stringToRepeat, numOfReps) {
-    let newString = ""
+    let newString = "";
     if (numOfReps < 0) {
-        return "ERROR"
+        return "ERROR";
     }
 
     for (let index = 0; index < numOfReps; index++) {
         newString += stringToRepeat;
     }
-    return newString
+    return newString;
 
 };
 
