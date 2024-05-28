@@ -1,6 +1,5 @@
 const sumAll = function(rangeStart, rangeEnd) {
 
-
     function checkConditionsToStart() {
         const conditions = [
             // does not take in negative numbers
@@ -18,11 +17,25 @@ const sumAll = function(rangeStart, rangeEnd) {
         }
         return false;
         // then the sum can be calculated
-
-
     }
+    if (checkConditionsToStart() === true) {
+        return "ERROR";
+    }
+
+    if (rangeEnd > rangeStart) {
+        [rangeStart, rangeEnd] = [rangeEnd, rangeStart];
+    }
+
+    let sum = 0;
+    for (let index = rangeStart; index <= rangeEnd; index++) {
+        sum += index;
+    }
+
+    return sum
     
 };
+
+sumAll(1, 4)
 
 // Do not edit below this line
 module.exports = sumAll;
