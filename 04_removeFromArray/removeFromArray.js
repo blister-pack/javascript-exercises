@@ -4,7 +4,7 @@ const removeFromArray = function (arrayToModify, ...valuesToRemove) {
     // every func
     for (const huntedValue of valuesToRemove) {
         while (arrayToModify.every(number => number != huntedValue) === false) {
-            let indexNumToRemove = arrayToModify.findIndex(huntedValue);
+            let indexNumToRemove = arrayToModify.findIndex(value => value === huntedValue);
             arrayToModify.splice(indexNumToRemove, 1);
         }
     
@@ -20,7 +20,7 @@ const removeFromArray = function (arrayToModify, ...valuesToRemove) {
 
 };
 
-removeFromArray([1, 2, 3, 4], 3)
+// removeFromArray([1, 2, 3, 4], 3)
 
 // Do not edit below this line
 module.exports = removeFromArray;
