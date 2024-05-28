@@ -1,15 +1,15 @@
 const sumAll = function(rangeStart, rangeEnd) {
 
 
-    function checkConditionsToStart(rangeStart, rangeEnd) {
+    function checkConditionsToStart() {
         const conditions = [
             // does not take in negative numbers
-            (rangeStart) => rangeStart < 0,
-            (rangeEnd) => rangeEnd < 0,
+            (negativeStart) => rangeStart < 0,
+            (negativeEnd) => rangeEnd < 0,
             
             // does not take in non-numbers
-            (rangeStart) => isNaN(rangeStart),
-            (rangeEnd) => isNaN(rangeEnd),
+            (isNumberStart) => isNaN(rangeStart),
+            (isNumberEnd) => isNaN(rangeEnd),
         ];
 
         if (conditions.includes(true)) {
