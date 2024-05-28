@@ -1,5 +1,11 @@
 const removeFromArray = function (arrayToModify, ...valuesToRemove) {
     // splice func
+    for (const huntedValue of valuesToRemove) {
+        for (const arrayNumToCompare of arrayToModify) {
+            
+        }
+        
+    }
 
 };
 
