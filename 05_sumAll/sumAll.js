@@ -22,7 +22,7 @@ const sumAll = function(rangeStart, rangeEnd) {
         return "ERROR";
     }
 
-    if (rangeEnd > rangeStart) {
+    if (rangeStart > rangeEnd) {
         [rangeStart, rangeEnd] = [rangeEnd, rangeStart];
     }
 
