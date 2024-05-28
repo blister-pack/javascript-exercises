@@ -3,19 +3,19 @@ const removeFromArray = function (arrayToModify, ...valuesToRemove) {
     // findIndex func
     // every func
     for (const huntedValue of valuesToRemove) {
-        while (arrayToModify.every(number => number != huntedValue) === false) {
+        while (arrayToModify.every(number => number !== huntedValue) === false) {
             // let indexNumToRemove = arrayToModify.findIndex(value => value === huntedValue);
             let indexNumToRemove = arrayToModify.indexOf(huntedValue);
             // this function is more appropriate for this use
             arrayToModify.splice(indexNumToRemove, 1);
         }
     
-    return arrayToModify
     }
+    return arrayToModify;
 
 };
 
-removeFromArray([1, 2, 3, 4], 3, 4)
+// removeFromArray([1, 2, 3, 4], 3, 4)
 
 // Do not edit below this line
 module.exports = removeFromArray;
