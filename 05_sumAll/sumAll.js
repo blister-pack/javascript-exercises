@@ -7,8 +7,8 @@ const sumAll = function(rangeStart, rangeEnd) {
             () => rangeEnd < 0,
             
             // does not take in non-numbers
-            () => isNaN(rangeStart),
-            () => isNaN(rangeEnd),
+            () => typeof(rangeStart) !== "number",
+            () => typeof(rangeEnd) !== "number",
         ];
 
         for (const condition of conditions) {
@@ -37,7 +37,7 @@ const sumAll = function(rangeStart, rangeEnd) {
     
 };
 
-sumAll(1, -4)
+sumAll(1, "4")
 
 // Do not edit below this line
 module.exports = sumAll;
