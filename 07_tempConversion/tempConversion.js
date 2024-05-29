@@ -8,7 +8,7 @@ const convertToFahrenheit = function (celsiusToConvert) {
   return parseFloat(convertedTemp.toFixed(1));
 };
 
-convertToCelsius(100);
+// convertToCelsius(100);
 
 // Do not edit below this line
 module.exports = {
