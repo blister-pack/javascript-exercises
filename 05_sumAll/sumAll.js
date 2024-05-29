@@ -33,7 +33,7 @@ const sumAll = function(rangeStart, rangeEnd) {
         sum += index;
     }
 
-    return sum
+    return sum;
     
 };
 
